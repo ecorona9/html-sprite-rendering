@@ -1,0 +1,81 @@
+body {
+    background-color: rgb(37, 34, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+}
+
+.container:hover {
+    box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.438);
+    cursor: pointer;
+
+}
+
+.sprite {
+    position: relative;
+    overflow: hidden;
+    /* border: 3px solid red; */
+    width: 370px;
+    height: fit-content;
+    
+}
+
+.sprite img {
+    position: inherit;
+    animation: walker 0.7s steps(8) infinite;
+}
+
+
+
+
+@keyframes walker {
+    from {
+        left: 0;
+        /* background-color: aliceblue; */
+    }
+    to {
+        left: -800%;
+        /* background-color: rgb(36, 90, 138); */
+    }
+  }
+
+
+
+
+  .sprite2 {
+    position: relative;
+    overflow: hidden;
+    /* border: 3px solid red; */
+    width: 440px;
+    height: fit-content;
+    
+}
+
+.sprite2 img {
+    position: inherit;
+    animation: walker2 0.3s steps(4) infinite;
+}
+
+
+
+
+@keyframes walker2 {
+    from {
+        left: 0;
+        /* background-color: aliceblue; */
+    }
+    to {
+        left: -1880px;
+        /* background-color: rgb(36, 90, 138); */
+    }
+  }
